@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>With Love</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loading-screen">
+    <div id="slideshow">
+      <img id="slide-img" src="" alt="memory" />
+      <div id="slide-overlay"></div>
+    </div>
+
+    <!-- HEARTBEAT SCREEN -->
+    <div id="heartbeat-screen">
+      <svg id="heartbeat-svg" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+        <polyline id="ecg-line" points="" />
+      </svg>
+      <div id="heart-icon">&#10084;</div>
+    </div>
+  </div>
+
+  <!-- HOMEPAGE -->
+  <div id="homepage">
+
+    <!-- AUDIO VIDEO (hidden, unmuted) -->
+    <video id="audio-video"autoplay loop playsinline>
+      <source src="images/Robel Mideksa - Ney Enhid ｜ ነይ እንሂድ - New Ethiopian Music 2025 (Official Lyrics Video) Track 01 [8YMAVexixX4].mkv" type="video/x-matroska" />
+    </video>
+
+    <!-- VIDEO CONTAINER -->
+    <div id="video-container">
+      <video id="bg-video" autoplay muted loop playsinline>
+        <source src="images/VID_20260916_225435_386.mp4" type="video/mp4" />
+      </video>
+      <div id="video-overlay"></div>
+    </div>
+
+    <!-- CONFETTI CANVAS (above video, below UI) -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <div id="top-message">Happy Birthday, My Love</div>
+
+    <div id="marquee-bar">
+      <div id="marquee-track">
+        <span class="marquee-text">I LOVE YOU, DEAR &nbsp;&nbsp;&nbsp;&#10084;&nbsp;&nbsp;&nbsp; I LOVE YOU, DEAR &nbsp;&nbsp;&nbsp;&#10084;&nbsp;&nbsp;&nbsp; I LOVE YOU, DEAR &nbsp;&nbsp;&nbsp;&#10084;&nbsp;&nbsp;&nbsp; I LOVE YOU, DEAR &nbsp;&nbsp;&nbsp;&#10084;&nbsp;&nbsp;&nbsp; I LOVE YOU, DEAR &nbsp;&nbsp;&nbsp;&#10084;&nbsp;&nbsp;&nbsp; I LOVE YOU, DEAR &nbsp;&nbsp;&nbsp;&#10084;&nbsp;&nbsp;&nbsp; I LOVE YOU, DEAR &nbsp;&nbsp;&nbsp;&#10084;&nbsp;&nbsp;&nbsp; I LOVE YOU, DEAR &nbsp;&nbsp;&nbsp;&#10084;&nbsp;&nbsp;&nbsp;</span>
+        <span class="marquee-text">I LOVE YOU, DEAR &nbsp;&nbsp;&nbsp;&#10084;&nbsp;&nbsp;&nbsp; I LOVE YOU, DEAR &nbsp;&nbsp;&nbsp;&#10084;&nbsp;&nbsp;&nbsp; I LOVE YOU, DEAR &nbsp;&nbsp;&nbsp;&#10084;&nbsp;&nbsp;&nbsp; I LOVE YOU, DEAR &nbsp;&nbsp;&nbsp;&#10084;&nbsp;&nbsp;&nbsp; I LOVE YOU, DEAR &nbsp;&nbsp;&nbsp;&#10084;&nbsp;&nbsp;&nbsp; I LOVE YOU, DEAR &nbsp;&nbsp;&nbsp;&#10084;&nbsp;&nbsp;&nbsp; I LOVE YOU, DEAR &nbsp;&nbsp;&nbsp;&#10084;&nbsp;&nbsp;&nbsp; I LOVE YOU, DEAR &nbsp;&nbsp;&nbsp;&#10084;&nbsp;&nbsp;&nbsp;</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
